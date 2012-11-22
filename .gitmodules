@@ -1,0 +1,3 @@
+[submodule "thirdparty/geocoder"]
+	path = thirdparty/geocoder
+	url = git@github.com:willdurand/Geocoder.git
