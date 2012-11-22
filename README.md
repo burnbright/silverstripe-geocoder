@@ -18,6 +18,9 @@ _config.php file:
 	SS_Geocoder::$provider_class = 'MaxMindProvider';
 ```
 
+For more providers, see the classes in this folder:
+`/thirdparty/geocoder/src/Geocoder/Provider/`
+
 ## Usage
 
 ``` php
