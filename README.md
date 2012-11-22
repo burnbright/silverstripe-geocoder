@@ -41,3 +41,12 @@ Outputs:
 	  'country' => string 'New Zealand' (length=11)
 	  'countryCode' => string 'NZ' (length=2)
 ```
+
+## Caveats
+
+Note that geocoding won't work on development environments, ie localhost ip addresses.
+
+Here are some ip addresses you can test:
+
+ * 88.188.221.14
+ * 68.145.37.34
