@@ -37,9 +37,12 @@ class SS_Geocoder{
 	}
 	
 	function instance_geocode($ip){
-		$result = $this->geocoder->geocode($ip)->toArray();
-		//TODO: cache results somehow
-		return $result;
+		try{
+			return $this->geocoder->geocode($ip)->toArray();
+		}catch(Geocoder\Exception\NoResultException $e){
+			//fail gracefully when response fails
+			return array();
+		}
 	}
 	
 }
